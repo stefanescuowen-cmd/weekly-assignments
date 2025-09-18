@@ -371,21 +371,22 @@ askQuestion();
 function startGame(){
     console.log("Welcome to the Math Game!");
 
+function askDifficulty(){
 rl.question("Select a difficulty (easy, medium, hard): ", (difficulty) => {
     difficulty = difficulty.toLowerCase();
     if (!["easy", "medium", "hard"].includes(difficulty)){
         console.log("Invalid difficulty. Please enter easy, medium, or hard.\n");
-        return startGame();
+        return askDifficulty();
     }
 
+    askGameMode(difficulty)
+});
+}
 
-function showMenu(){
+function askGameMode(difficulty){
     console.log("Select a mode:");
     console.log("1. Max Score (20 Questions, Skip Allowed)");
     console.log("2. Three Out (3 Lives, No Skips)");
-}
-
-showMenu();
 
 rl.question("Enter 1 or 2: ", (choice) => {
     if (choice === "1"){
@@ -396,10 +397,10 @@ rl.question("Enter 1 or 2: ", (choice) => {
     }
     else{
         console.log("Invalid Choice. Please enter 1 or 2.\n");
-        startGame();
+        askGameMode(difficulty);
     }
 });
-});
 }
-
-startGame();
+askDifficulty()
+}
+startGame()
