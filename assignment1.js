@@ -32,8 +32,6 @@
 
 // function askMaxScoreQuestion(){
 //     const q = generateQuestion();
-
-
     
 // rl.question(`Question ${questionNumber}: ${q.question} `, (userInput) => {
 //     if (userInput.toLowerCase() === "skip"){
@@ -64,7 +62,6 @@
 // console.log("\nStarting Max Score Mode!")
 // askMaxScoreQuestion()
 // }
-
 
 // function threeOutMode(){
 // let score = 0;
@@ -161,8 +158,6 @@
 
 // function askMaxScoreQuestion(){
 //     const q = generateQuestion();
-
-
     
 // rl.question(`Question ${questionNumber}: ${q.question} `, (userInput) => {
 //     if (userInput.toLowerCase() === "skip"){
@@ -193,7 +188,6 @@
 // console.log("\nStarting Max Score Mode!")
 // askMaxScoreQuestion()
 // }
-
 
 // function threeOutMode(){
 // let score = 0;
@@ -307,8 +301,6 @@ const totalQuestions = 20;
 
 function askMaxScoreQuestion(){
     const q = generateQuestion(difficulty);
-
-
     
 rl.question(`Question ${questionNumber}: ${q.question} `, (userInput) => {
     if (userInput.toLowerCase() === "skip"){
