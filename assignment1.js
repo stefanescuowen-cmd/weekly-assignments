@@ -294,6 +294,8 @@ if ((operator === "/" || operator === "%") && num2 === 0){
     };
 }
 
+//MAX SCORE MODE
+
 function maxScoreMode(difficulty){
 let score = 0;
 let questionNumber = 1;
@@ -332,6 +334,8 @@ console.log("\nStarting Max Score Mode!")
 askMaxScoreQuestion()
 }
 
+// THREE OUT MODE
+
 function threeOutMode(difficulty){
 let score = 0;
 let lives = 3
@@ -361,6 +365,8 @@ rl.question(`Solve this: ${q.question} `, (userInput) => {
 console.log("\nStarting Three-Out Mode!")
 askQuestion();
 }
+
+// MAIN MENU
 
 function startGame(){
     console.log("Welcome to the Math Game!");
