@@ -332,7 +332,6 @@ console.log("\nStarting Max Score Mode!")
 askMaxScoreQuestion()
 }
 
-
 function threeOutMode(difficulty){
 let score = 0;
 let lives = 3
